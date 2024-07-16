@@ -1,0 +1,12 @@
+[submodule "libs/osdl2"]
+	path = libs/osdl2
+	url = git@github.com:ssbx/osdl2
+[submodule "libs/osdl2-image"]
+	path = libs/osdl2-image
+	url = git@github.com:ssbx/osdl2-image
+[submodule "libs/caml-libsdl2"]
+	path = libs/caml-libsdl2
+	url = https://github.com/ssbx/caml-libsdl2.git
+[submodule "libs/caml-libsdl2-image"]
+	path = libs/caml-libsdl2-image
+	url = https://github.com/ssbx/caml-libsdl2-image
