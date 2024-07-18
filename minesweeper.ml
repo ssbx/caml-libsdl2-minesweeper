@@ -44,12 +44,18 @@ module GameLoop = struct
     Sdl.set_hint "SDL_RENDER_SCALE_QUALITY" "2";
     Sdl.set_hint "SDL_RENDER_VSYNC" "1";
     let window =
-      Sdl.create_window ~title:win_name ~pos:(`centered, `centered)
-        ~dims:(1240, 780)
+      Sdl.create_window
+        ~title:win_name
+        ~x:`centered
+        ~y:`centered
+        ~width:1240
+        ~height:780
         ~flags:[ Sdl.WindowFlags.Resizable; Sdl.WindowFlags.OpenGL ]
     in
     let renderer =
-      Sdl.create_renderer ~win:window ~index:(-1)
+      Sdl.create_renderer
+        ~win:window
+        ~index:(-1)
         ~flags:
           [
             Sdl.RendererFlags.Accelerated;
